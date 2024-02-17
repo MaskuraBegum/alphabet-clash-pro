@@ -88,15 +88,16 @@
                   </div>
             </div>
             <div class="poppins-regular flex justify-between">
-                <button class=" bg-purple-500 text-white rounded-full text-2xl px-8 py-4 space-x-2"><span>Life</span><i class="fa-solid fa-heart-circle-bolt"></i><span>1</span></button>
-                <button class=" bg-purple-500 text-white rounded-full text-2xl px-8 py-4 space-x-2"><span>Score</span><i class="fa-solid fa-circle-dollar-to-slot"></i><span>1</span></button>
+                <button class=" bg-purple-500 text-white rounded-full text-2xl px-8 py-4 space-x-2"><span>Life</span><i class="fa-solid fa-heart-circle-bolt"></i><span id="current-life">3</span></button>
+                <button class=" bg-purple-500 text-white rounded-full text-2xl px-8 py-4 space-x-2"><span>Score</span><i class="fa-solid fa-circle-dollar-to-slot"></i><span id="current-score">0</span></button>
             </div>
 
         </section>
         <section id="score" class=" flex flex-col justify-center items-center min-h-screen poppins-regular hidden">
             <div class="bg-[#FFFFFF33] p-8 text-center space-y-8 rounded-xl">
-                <h1 class="text-8xl"><span>score:1</span></h1>
-            <button class="btn">play again</button>
+                <h1 class="text-2xl">Game over!</h1>
+                <h1 class="text-8xl">score:<span id="final-score">0</span></h1>
+            <button id="play-again" onclick="play()" class="btn">play again</button>
             <p>Practice will make you Pro!</p>
             </div>
 
